@@ -1,0 +1,17 @@
+{
+  "name": "basic-routing",
+  "version": "1.0.0",
+  "description": "This app is for creating basic route using express js",
+  "main": "route.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "basic_route"
+  ],
+  "author": "Technical Amanjeet",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
