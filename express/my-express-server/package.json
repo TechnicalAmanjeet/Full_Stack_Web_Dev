@@ -1,0 +1,19 @@
+{
+  "name": "my-express-server",
+  "version": "1.0.0",
+  "description": "my first express server of this project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "server",
+    "express"
+  ],
+  "author": "Technical Amanjeet",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
