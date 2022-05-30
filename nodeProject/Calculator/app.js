@@ -20,6 +20,18 @@ app.post("/", (req, resp)=> {
     // resp.send("your response sumbmitted successfully.")
 })
 
+app.get("/bmiCalculator", (req, resp) =>{
+    resp.sendFile(__dirname + "/bmiCalculator.html");
+});
+
+app.post("/bmiCalculator", (req, resp) => {
+    const height = Number(req.body.height);
+    const weight = Number(req.body.weight);
+
+    const bmi = weight/(height * height);
+    resp.send(`Your BMI is ${bmi}`)
+})
+
 app.listen(port, (err)=>{
     if(err) throw err;
     console.log("server is running at " + port);
