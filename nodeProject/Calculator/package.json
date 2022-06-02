@@ -1,0 +1,17 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "\"will create basic calculator by using node js\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "calculator"
+  ],
+  "author": "Technical Amanjet",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
