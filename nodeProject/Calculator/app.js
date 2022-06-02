@@ -29,7 +29,7 @@ app.post("/bmiCalculator", (req, resp) => {
     const weight = Number(req.body.weight);
 
     const bmi = weight/(height * height);
-    resp.send(`Your BMI is ${bmi}`)
+    resp.append(`Your BMI is ${bmi}`);
 })
 
 app.listen(port, (err)=>{

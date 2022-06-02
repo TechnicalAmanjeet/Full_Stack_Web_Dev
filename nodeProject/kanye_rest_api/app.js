@@ -22,6 +22,7 @@ app.get("/",async (req, resp) => {
             body += chunck; // we get chunck as a buffer datatype but by concating it to body we  converted it to string.
             try {
                 body = JSON.parse(body); // parsed api output into json and now we can do whatever we want.
+
                 // do something with JSON
                 // console.log(typeof(body));
                 // console.log(typeof(json));
@@ -38,9 +39,7 @@ app.get("/",async (req, resp) => {
         });
         
     })
-    
-    
-    // resp.send("server is up and running." );
+
     
 })
 
