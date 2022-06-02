@@ -1,0 +1,41 @@
+cmd =>
+
+1.) ls , ls -l , ls -la,
+
+2.) cmd -h or cmd --help => to get help regarding any cmd.
+
+3.) mkdir newFolder => will create new folder with name 'newFolder'
+
+4.) touch newFile => will create new empty file with name 'newFile'
+
+5.) cat > newFile, cat file, cat >> file, > fileName
+
+6.) cd folderName , cd .. , cd . => to change directory.
+
+7.) pwd => print working directory.
+
+8.) history => to check all the previous cmd which u have run.
+
+
+
+Shortcuts =>
+
+1. ctrl + a => to go begining of present cmd.
+
+2. ctrl + e => to go at the end point of present cmd.
+
+3. ctrl + u => to clear present cmd.
+
+4. left and right arrow key => to navigate in the present cmd.
+
+5. up and down arrow key => to navigate in the history cmd
+
+website => learnenough.com
+
+cmd =>
+
+1.) rmdir folderName => delete empty folder.
+
+2.) rm fileName => delete file parmanantly
+
+3.) rm -rf folderName => delete all the content of current folder
