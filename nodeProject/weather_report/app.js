@@ -32,12 +32,17 @@ app.post('/getTemp', (req, resp) => {
     https.get(url, (respons) => {
         respons.on('data', (chunk) => {
             let responByApiJson = JSON.parse(chunk);
-            // console.log(responByApiJson);
+            console.log(responByApiJson);
 
-            let result = `<h1> Temperature in ${responByApiJson.name} is ${responByApiJson.main.temp}.`;
+            let result = `<h1> Temperature in ${responByApiJson.name} is ${responByApiJson.main.temp} degree celcius. `;
             // result = `<<= alert(result)>>`;
             // let output = alert(result);
-            resp.send(result);
+
+            // as we know that we can't use more then one resp.send() method for a single route. so instead of it
+            // we can use resp.write() method as many times as we want. followed by resp.send() method call.
+            resp.write(result);
+            resp.write("<h2> The weather condition is " + responByApiJson.weather[0].description + " </h2>");
+            resp.send();
         })
     });
 })
